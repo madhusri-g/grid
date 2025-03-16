@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <style>
+      .container {
+        width: 830px;
+        height: 520px;
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: 166px 166px 166px;
+        row-gap: 10px;
+        column-gap: 10px;
+        margin-top: 50px;
+        margin-left: 100px;
+      }
+      .container div {
+        text-align: center;
+        line-height: 120px;
+      }
+      .green {
+        background-color: green;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .orangered {
+        background-color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="green" style="grid-row: 1/4"></div>
+      <div class="green" style="grid-column: 2/4"></div>
+      <div class="orangered"></div>
+      <div class="yellow"></div>
+      <div class="orangered"></div>
+      <div class="orangered"></div>
+      <div class="yellow"></div>
+      <div class="green" style="grid-row: 2/4; grid-column: 4/5"></div>
+    </div>
+  </body>
+</html>
